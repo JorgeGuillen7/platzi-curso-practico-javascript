@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./figuras.css" />
+		<title>Figuras geométricas | Curso Práctico de JavaScript</title>
+	</head>
+	<body>
+		<header>
+			<h1>Figuras geométricas</h1>
+			<p>
+				Este es el primer taller del curso práctico de JavaScript. Aquí
+				podrás calcula el área y perímetro de tus figuras geométricas.
+			</p>
+		</header>
+
+		<main class="main-container">
+			<section class="calculator-container calculator-square">
+				<h2 class="calculator-title">Cuadrado</h2>
+				<div class="calculator-img img-square"></div>
+				<p class="calculator-description">
+					Introduce las medidas de tu cuadrado
+				</p>
+				<form class="calculator-form form-square" action="">
+					<label for="inputCuadrado">Lado (cm):</label>
+					<input
+						class="form-input"
+						id="inputCuadrado"
+						type="number"
+						placeholder="Lado (cm)"
+					/>
+					<button
+						class="btn"
+						type="button"
+						onclick="calcularPerimetroCuadrado()"
+					>
+						Calcular el perímetro
+					</button>
+					<button
+						class="btn"
+						type="button"
+						onclick="calcularAreaCuadrado()"
+					>
+						Calcular el área
+					</button>
+				</form>
+				<p class="calculator-result">El área es de 20 cm</p>
+			</section>
+
+			<section class="calculator-container calculator-triangle">
+				<h2 class="calculator-title">Triángulo</h2>
+				<div class="calculator-img img-triangle"></div>
+				<p class="calculator-description">
+					Introduce las medidas de tu triángulo
+				</p>
+				<form class="calculator-form form-triangle" action="">
+					<!-- <label for="leftSideTriangle"> Lado izquierdo (cm): </label> -->
+					<input
+						class="form-input"
+						id="leftSideTriangle"
+						type="number"
+						placeholder="Lado izquierdo (cm)"
+					/>
+					<!-- <label for="rightSideTriangle"> Lado derecho (cm): </label> -->
+					<input
+						class="form-input"
+						id="rightSideTriangle"
+						type="number"
+						placeholder="Lado derecho (cm)"
+					/>
+					<!-- <label for="baseTriangle"> Base (cm): </label> -->
+					<input
+						class="form-input"
+						id="baseTriangle"
+						type="number"
+						placeholder="Base (cm)"
+					/>
+					<!-- <label for="heightTriangle"> Altura (cm): </label> -->
+					<input
+						class="form-input"
+						id="heightTriangle"
+						type="number"
+						placeholder="Altura (cm)"
+					/>
+					<button
+						class="btn"
+						type="button"
+						onclick="calcularPerimetroTriangulo()"
+					>
+						Calcular el perímetro
+					</button>
+					<button
+						class="btn"
+						type="button"
+						onclick="calcularAreaTriangulo()"
+					>
+						Calcular el área
+					</button>
+				</form>
+				<p class="calculator-result">El perímetro es de 20 cm</p>
+			</section>
+
+			<section class="calculator-container calculator-circle">
+				<h2 class="calculator-title">Círculo</h2>
+				<div class="calculator-img img-circle"></div>
+				<p class="calculator-description">
+					Introduce las medidas de tu círculo
+				</p>
+				<form class="calculator-form form-circle" action="">
+					<label for="inputCirculo">Radio (cm):</label>
+					<input
+						class="form-input"
+						id="inputCirculo"
+						type="number"
+						placeholder="Radio (cm)"
+					/>
+					<button
+						class="btn"
+						type="button"
+						onclick="calcularPerimetroCirculo()"
+					>
+						Calcular el perímetro
+					</button>
+					<button
+						class="btn"
+						type="button"
+						onclick="calcularAreaCirculo()"
+					>
+						Calcular el área
+					</button>
+				</form>
+				<p class="calculator-result">El área es de 20 cm</p>
+			</section>
+		</main>
+
+		<script src="./figuras.js"></script>
+	</body>
+</html>
