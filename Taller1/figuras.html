@@ -46,38 +46,37 @@
 						Calcular el área
 					</button>
 				</form>
-				<p class="calculator-result">El área es de 20 cm</p>
+				<p class="calculator-result" id="squareResult"></p>
 			</section>
 
-			<section class="calculator-container calculator-triangle">
+			<section
+				class="calculator-container calculator-triangle"
+				id="calculator-triangle"
+			>
 				<h2 class="calculator-title">Triángulo</h2>
 				<div class="calculator-img img-triangle"></div>
 				<p class="calculator-description">
 					Introduce las medidas de tu triángulo
 				</p>
 				<form class="calculator-form form-triangle" action="">
-					<!-- <label for="leftSideTriangle"> Lado izquierdo (cm): </label> -->
 					<input
 						class="form-input"
 						id="leftSideTriangle"
 						type="number"
 						placeholder="Lado izquierdo (cm)"
 					/>
-					<!-- <label for="rightSideTriangle"> Lado derecho (cm): </label> -->
-					<input
-						class="form-input"
-						id="rightSideTriangle"
-						type="number"
-						placeholder="Lado derecho (cm)"
-					/>
-					<!-- <label for="baseTriangle"> Base (cm): </label> -->
 					<input
 						class="form-input"
 						id="baseTriangle"
 						type="number"
 						placeholder="Base (cm)"
 					/>
-					<!-- <label for="heightTriangle"> Altura (cm): </label> -->
+					<input
+						class="form-input"
+						id="rightSideTriangle"
+						type="number"
+						placeholder="Lado derecho (cm)"
+					/>
 					<input
 						class="form-input"
 						id="heightTriangle"
@@ -99,7 +98,60 @@
 						Calcular el área
 					</button>
 				</form>
-				<p class="calculator-result">El perímetro es de 20 cm</p>
+				<p class="calculator-result" id="triangleResult"></p>
+				<div class="turn-triangle" onclick="switchTriangle()">
+					cambiar
+				</div>
+			</section>
+
+			<section
+				class="calculator-container calculator-triangle-isosceles"
+				id="calculator-triangle-isosceles"
+			>
+				<h2 class="calculator-title">Triángulo isósceles</h2>
+				<div class="calculator-img img-triangle"></div>
+				<p class="calculator-description">
+					Introduce las medidas de tu triángulo
+				</p>
+				<form class="calculator-form form-triangle" action="">
+					<input
+						class="form-input"
+						id="leftSideTriangleIsosceles"
+						type="number"
+						placeholder="Lado izquierdo (cm)"
+					/>
+					<input
+						class="form-input"
+						id="rightSideTriangleIsosceles"
+						type="number"
+						placeholder="Lado derecho (cm)"
+					/>
+					<input
+						class="form-input"
+						id="baseTriangleIsosceles"
+						type="number"
+						placeholder="Base (cm)"
+					/>
+					<button
+						class="btn"
+						type="button"
+						onclick="calcularPerimetroTrianguloIsosceles()"
+					>
+						Calcular el perímetro
+					</button>
+					<button
+						class="btn"
+						type="button"
+						onclick="calcularAreaTrianguloIsosceles()"
+					>
+						Calcular el área
+					</button>
+				</form>
+				<p class="calculator-result" id="triangleIsoscelesResult"></p>
+				<div
+					class="turn-triangle"
+					onclick="switchTriangleReverse()"
+				></div>
 			</section>
 
 			<section class="calculator-container calculator-circle">
@@ -131,7 +183,7 @@
 						Calcular el área
 					</button>
 				</form>
-				<p class="calculator-result">El área es de 20 cm</p>
+				<p class="calculator-result" id="circleResult"></p>
 			</section>
 		</main>
 
